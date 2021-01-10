@@ -1,3 +1,6 @@
+# The code is modified from
+# https://gist.github.com/lopes/168c9d74b988391e702aac5f4aa69e41
+#
 from base64 import b64decode
 from base64 import b64encode
 
