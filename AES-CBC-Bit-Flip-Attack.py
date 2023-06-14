@@ -26,11 +26,10 @@ class AESCipher:
     
 def bitFlip( pos, bit, data):
     raw = b64decode(data)
-
     list1 = list(raw)
-    list1[pos] = chr(ord(list1[pos])^bit)
-    raw = ''.join(list1)
-    return b64encode(raw)
+    list1[pos] = list1[pos] ^ bit
+    raw = bytes(list1)
+    return b64encode(bytes(raw))
 
 
 if __name__ == '__main__':
